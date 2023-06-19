@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - Starting program
+ * main - Entry Point
  *
  * Description: Printing the size various types on StdOut
  *
- * Result: Zero equals success
- */
+ * Return: Zero equals success
+*/
 int main(void)
 {
 char a = 'a';
