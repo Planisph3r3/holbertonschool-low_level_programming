@@ -11,7 +11,7 @@ int main(void)
 {
 char az[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int x;
-for (x = 0; x <= 50; x++)
+for (x = 0; x <= 51; x++)
 {
 putchar(az[x]);
 }
