@@ -8,7 +8,6 @@
 *
 * Return: Zero equals success
 */
-  
 int main(void)
 {
 int n;
