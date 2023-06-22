@@ -1,4 +1,4 @@
-all:
+xall:
 	$(CC) $(SRC) -o school
 
 CC = gcc
