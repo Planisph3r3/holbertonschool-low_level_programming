@@ -5,20 +5,14 @@
  * Description: Program that prints the whole alphabet
  *
  * 
- */
-	
-void print_alphabet(void);
-int main(void)
-{
-	print_alphabet
-}	
+ */	
 void print_alphabet(void)
 {
 char abc;
 
-for (abc == 'a'; abc <= 'z'; abc++)
+for (abc = 'a'; abc <= 'z'; abc++)
 {
-_putchar(abc)
+_putchar(abc);
 }
-_putchar(\n)
+_putchar('\n');
 }
