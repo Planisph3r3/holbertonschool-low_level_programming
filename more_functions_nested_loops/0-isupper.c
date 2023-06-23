@@ -2,7 +2,7 @@
 /**
  * _isupper - Finds out if a letter is uppercase or not
  *
- * Description: Program that checks for lowercase character
+ * @c: Checked number
  *
  * Return: 0 or 1 depending the result
  */
