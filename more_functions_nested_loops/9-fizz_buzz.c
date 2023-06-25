@@ -8,7 +8,7 @@
  *
  * Return: Void
  */
-void main(void)
+int main(void)
 {
 	int a;
 for (a = 1; a <= 100; a++)
@@ -35,4 +35,5 @@ for (a = 1; a <= 100; a++)
 	}
 }
 printf("\n");
+return ("0");
 }
