@@ -1,3 +1,10 @@
+CC = gcc
+SRC = $(shell find ./ -name \*.c)
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -10,14 +17,3 @@ oclean:
 	$(RM) $(wildcard *.o)
 
 fclean: clean $(wildcard *.o)
-
-re: fclean all
-
-
-
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
-NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
