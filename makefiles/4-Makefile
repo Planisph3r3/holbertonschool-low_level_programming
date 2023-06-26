@@ -16,7 +16,7 @@ re: fclean all
 
 
 CC = gcc
-SRC = $(shell find ./ -name \*.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
