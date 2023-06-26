@@ -17,3 +17,5 @@ oclean:
 	$(RM) $(wildcard *.o)
 
 fclean: clean $(wildcard *.o)
+
+re: fclean all
