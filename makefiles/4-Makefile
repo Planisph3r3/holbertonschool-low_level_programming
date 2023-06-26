@@ -16,7 +16,7 @@ re: fclean all
 
 
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = $(wildcard src/*.c)
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
