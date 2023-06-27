@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _puts - prints a string on stderr
+ * _puts - prints a string on stdout
  *
  *@str: value who stores the string itself
  *
@@ -14,7 +14,7 @@ void _puts(char *str)
     int a;
 for (a = 0; str[a] != '\0'; a++)
 {
-write(2, &str[a], 1);
+write(1, &str[a], 1);
 }
 _putchar('\n');
 }
