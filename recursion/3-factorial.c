@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * _strlen_recursion - Prints the result of a factorial
+ * factorial - Prints the result of a factorial
  *
  *@n: store the value to be factorized
  *
