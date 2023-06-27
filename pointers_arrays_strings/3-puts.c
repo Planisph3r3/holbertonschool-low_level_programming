@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
- * _puts - prints a string
+ * _puts - prints a string on stderr
  *
  *@str: value who stores the string itself
  *
@@ -11,11 +11,10 @@
 
 void _puts(char *str)
 {
-int a;
+    int a;
 for (a = 0; str[a] != '\0'; a++)
 {
-	_putchar(str[a]);
+write(2, &str[a], 1);
 }
-
+_putchar('\n');
 }
-
