@@ -3,6 +3,8 @@
  * add - addition function
  *
  * Description: function that adds between two ints
+ *@a:First value
+ *@b:Second value
  *
  * Return: C value equals success
  */
