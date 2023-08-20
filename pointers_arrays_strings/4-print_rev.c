@@ -7,16 +7,19 @@
  *
  * Return: Void
  */
+void print_rev(char *s)
+{
+int i, j, length;
+i = 0;
+while (s[i] != '\0')
+{
+i++;
+}
+length = i;
 
-void print_rev(char *str)
+for (k = length - 1; k >= 0; k--)
 {
-	int i;
-for (i = 63; i >= 0; i--)
-{
-if (str[i] != '\0')
-{
-_putchar (str[i]);
+_putchar(s[j]);
 }
-}
-_putchar ('\n');
+_putchar('\n');
 }
