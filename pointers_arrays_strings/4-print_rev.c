@@ -3,7 +3,7 @@
 /**
  * print_rev - print a certain string backwards on stdout
  *
- * @str: value who stores the string itself
+ * @s: value who stores the string itself
  *
  * Return: Void
  */
