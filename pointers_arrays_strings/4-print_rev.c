@@ -19,7 +19,7 @@ length = i;
 
 for (k = length - 1; k >= 0; k--)
 {
-_putchar(s[j]);
+_putchar(s[k]);
 }
 _putchar('\n');
 }
