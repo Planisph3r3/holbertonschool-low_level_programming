@@ -35,7 +35,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (j <= 10)
+	while (j <= i)
 	{
 		p[j] = str[j];
 		j++;
