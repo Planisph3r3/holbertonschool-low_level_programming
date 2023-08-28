@@ -26,9 +26,9 @@ p = (int **)malloc(width * sizeof(int *));
 {
 	return (NULL);
 }
-for (i = 0; i < width; i++)
+for (i = 0; i < heigth; i++)
 {
-	p[i] = malloc(sizeof(int) * height);
+	p[i] = malloc(sizeof(int) * width);
 	if (p[i] == NULL)
 	{
 		free(p);
