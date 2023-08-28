@@ -26,16 +26,11 @@ p = (int **)malloc(width * sizeof(int *));
 {
 	return (NULL);
 }
-for (i = 0; i < height; i++)
+for (i = 0; i < width; i++)
 {
-	p[i] = malloc(sizeof(int) * width);
+	p[i] = malloc(sizeof(int) * height);
 	if (p[i] == NULL)
 	{
-		free(p);
-		for (j = 0; j <= 1; j++)
-		{
-			free(p[j]);
-		}
 	return (NULL);
 	}
 }
@@ -47,4 +42,10 @@ for (i = 0; i < height; i++)
 	}
 }
 return (p);
+free(p);
+
+for (j = 0; j <= i; j++)
+{
+	free(p[j]);
+}
 }
