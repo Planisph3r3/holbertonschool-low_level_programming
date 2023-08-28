@@ -27,7 +27,15 @@ char *str_concat(char *s1, char *s2)
 	j++;
 	}
 
-p1 = malloc(i + 1);
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+p1 = malloc(i);
 p2 = malloc(j + 1);
 
 if (p1 == NULL)
