@@ -24,7 +24,7 @@ int j;
 }
 for (i = 0; i < width; i++)
 {
-	p[i] = malloc(sizeof(int) * height)
+	p[i] = malloc(sizeof(int) * height);
 	if (p[i] == NULL)
 	{
 	return (NULL);
