@@ -46,3 +46,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	alloc->owner[i] = '\0';
 	alloc->age = age;
 	return (alloc);
+}
