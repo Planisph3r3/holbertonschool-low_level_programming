@@ -19,3 +19,4 @@ if (d == NULL)
 {
 	d = malloc(sizeof(struct dog));
 }
+}
