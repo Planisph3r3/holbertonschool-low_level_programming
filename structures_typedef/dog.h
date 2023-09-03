@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 
-/*
+/**
  * struct dog - structure made for the dog.
  *
  *@name: Name of the dog.
@@ -17,7 +17,7 @@ typedef struct dog
 } dog;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-/*
+/**
  * struct dog_t - structure made for the dog.
  *
  *@name: Name of the dog.
