@@ -6,14 +6,12 @@
  * @format: stores the type of data that is about to be printed  
  * Return: Void
  */
-#include <stdio.h>
-#include <stdarg.h>
-
 void print_all(const char * const format, ...)
 {   
-const char *p = format;
-va_list datatype;
-va_start(datatype, format);
+    const char *p = format;
+    va_list datatype;
+    va_start(datatype, format);
+    int printed = 0;
 
     while (*p)
     {
@@ -23,12 +21,15 @@ va_start(datatype, format);
         {
             case 'c':
                 printf("%c", va_arg(datatype, int));
+                printed = 1;
                 break;
             case 'i':
                 printf("%d", va_arg(datatype, int));
+                printed = 1;
                 break;
             case 'f':
                 printf("%f", va_arg(datatype, double));
+                printed = 1;
                 break;
             case 's':
             {
@@ -38,10 +39,11 @@ va_start(datatype, format);
                 switch (isNull)
                 {
                     case 1:
-                        printf("nil");
+                        printf("(nil)");
                         break;
                     default:
                         printf("%s", str);
+                        printed = 1;
                         break;
                 }
                 break;
@@ -51,7 +53,7 @@ va_start(datatype, format);
         }
 
         p++;
-        if (*p == 'c' || *p == 'i' || *p == 'f' || *p == 's')
+        if ((*p == 'c' || *p == 'i' || *p == 'f' || *p == 's') && printed)
         {
             printf(", ");
         }
