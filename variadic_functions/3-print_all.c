@@ -15,7 +15,7 @@ va_start(datatype, format);
 
  if (format == NULL)
     {
-        printf("");
+        printf(" ");
         return;
     }
 
