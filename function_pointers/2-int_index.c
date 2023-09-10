@@ -20,6 +20,6 @@ if (cmp(array[i]))
 {
 return (i);
 }
-return (-1);
 }
+return (-1);
 }
