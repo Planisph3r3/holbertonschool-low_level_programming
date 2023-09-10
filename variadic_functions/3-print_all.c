@@ -7,11 +7,11 @@
  * Return: Void
  */
 void print_all(const char * const format, ...)
-{   
-    const char *p = format;
-    va_list datatype;
-    va_start(datatype, format);
-    int printed = 0;
+{  
+int printed = 0;
+const char *p = format;
+va_list datatype;
+va_start(datatype, format);
 
     while (*p)
     {
