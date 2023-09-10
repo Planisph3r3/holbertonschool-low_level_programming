@@ -13,6 +13,12 @@ const char *p = format;
 va_list datatype;
 va_start(datatype, format);
 
+ if (format == NULL)
+    {
+        printf("");
+        return;
+    }
+
     while (*p)
     {
         const char actual_p = *p;
