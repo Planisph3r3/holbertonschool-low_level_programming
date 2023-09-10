@@ -13,7 +13,6 @@ int sum_them_all(const unsigned int n, ...)
 {
 int u;
 unsigned int i; 
-
 va_list num;
 
 if (n == 0)
